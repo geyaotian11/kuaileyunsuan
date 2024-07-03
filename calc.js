@@ -56,6 +56,10 @@ for(var i = 0; i < ele.length; i ++){
   var td = ele[i].querySelector('td');
   //将生成的题目放到元素上
   td.innerHTML = quiz_list[i];
+  //拿到tr里面的 input
+  var input = ele[i].querySelector('input');
+  //再讲input中的value清除
+  input.value = '';
 }
 //拿到要隐藏的元素div
 var node = document.querySelector('#post');
